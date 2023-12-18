@@ -1,0 +1,93 @@
+{% load static %}
+<html lang="pl">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <link rel="shortcut icon" href="static/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Install Home</title>
+
+    <!-- Bootstrap core CSS -->
+ <link href="{% static 'material/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'material/css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'material/css/templatemo-style.css' %}">
+        <link rel="stylesheet" href="{% static 'material/css/owl.css' %}">
+        <link rel="stylesheet" href="{% static 'external/photoswipe/photoswipe.css' %}">
+        <link rel="stylesheet" href="{% static 'external/photoswipe/default-skin/default-skin.css' %}">
+
+        <script src="{% static 'material/js/jquery.min.js' %}"></script>
+        <script src="{% static 'material/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'material/js/browser.min.js' %}"></script>
+        <script src="{% static 'material/js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'material/js/transition.js' %}"></script><script src="{% static 'material/js/owl-carousel.js' %}"></script><script src="{% static 'material/js/custom.js' %}"></script><script src="{% static 'jquery-2.2.0.js' %}"></script><script src="{% static 'app.js' %}"></script>
+
+
+  </head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+  {% block content %}
+
+  {% endblock %}
+
+      <!-- Sidebar -->
+        <div id="sidebar">
+
+          <div class="inner">
+
+            <!-- Search Box -->
+
+            <!-- Menu -->
+            <nav id="menu">
+              <ul>
+                <li><a href="firma">Install Home</a></li>
+                <li><a href="kwalifikacje">Kwalifikacje</a></li>
+                <li><a href="zlecenia">Ukończone zlecenia</a></li>
+                <li><a href="kontakt">Kontakt</a></li>
+                  <li></li>
+              </ul>
+            </nav>
+
+              <br>
+            <!-- Featured Posts -->
+              <div class="featured-posts">
+              <div class="owl-carousel owl-theme">
+                  <div class="featured-item">
+                    <img src="static/images/logoz.jpg" alt="featured one">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+              <p class="copyright">Copyright &copy; 2023 Install Home
+              <br>Design: <a rel="nofollow" href="https://www.facebook.com/profile.php?id=100083177449778"> Bastian</a></p>
+            </footer>
+
+          </div>
+
+
+    </div>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="static/material/js/jquery.min.js"></script>
+    <script src="static/material/js/bootstrap.bundle.min.js"></script>
+    <script src="static/material/js/browser.min.js"></script>
+    <script src="static/material/js/breakpoints.min.js"></script>
+    <script src="static/material/js/transition.js"></script>
+    <script src="static/material/js/owl-carousel.js"></script>
+    <script src="static/material/js/custom.js"></script>
+   <script src="static/material/js/jquery-2.2.0.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script> -->
+    {% include 'material/includes/material_js.html' %}
+    <script src="{% static 'app.js' %}"></script> {% block js %}{% endblock %}
+    </body>
+</html>

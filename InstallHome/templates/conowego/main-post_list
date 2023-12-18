@@ -1,0 +1,58 @@
+              {% for post in posts %}
+
+            <!-- Header -->
+              <section class="main-banner">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="banner-content">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="banner-caption">
+                                              <h4>{{ post.nazwa }}</h4>
+                                              <br>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+                {% if post.lewo == True %}
+                    <section class="left-image">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="{{ post.image.url }}" class="responsive-img dpg-album-image" alt="{{ usluga.alt }}">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="right-content">
+                                        <p>{{ post.opis }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+              <hr>
+              <br>
+                {% elif post.prawo == True %}
+                    <!-- Right Image1 -->
+                    <section class="right-image">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="left-content">
+                                        <p>{{ post.opis }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{ post.image.url }}" class="responsive-img dpg-album-image" alt="{{ usluga.alt }}">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+              <hr>
+              <br>
+                {% endif %}
+              {% endfor %}

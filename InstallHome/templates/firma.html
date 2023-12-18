@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <div class="logo">
+                    <div class="logoimg">
+                        <a href="main"><img src="static/images/logob.png" alt=""></a>
+                    </div>
+                </div>
+            </header>
+        {% for factory in factorys %}
+            <!-- Banner -->
+            <section class="main-banner">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="banner-content">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="banner-caption">
+                            <h4>{{ factory.titlemain }}</h4>
+                            <br>
+                            <p>{{ factory.describemain }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr>
+        {% for usluga in uslugis %}
+                {% if usluga.lewo == True %}
+                    <section class="left-image">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="{{ usluga.photo.url }}" class="responsive-img dpg-album-image" alt="{{ usluga.alt }}">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="right-content">
+                                        <h4>{{ usluga.title }}</h4>
+                                        <p>{{ usluga.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                {% elif usluga.prawo == True %}
+                    <!-- Right Image1 -->
+                    <section class="right-image">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="left-content">
+                                        <h4>{{ usluga.title }}</h4>
+                                        <p>{{ usluga.description }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{ usluga.photo.url }}" class="responsive-img dpg-album-image" alt="{{ usluga.alt }}">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                {% endif %}
+            {% endfor %}
+                <hr>
+                        <!-- Top Image -->
+            <section class="top-image">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img src="static/images/13.jpg" alt="">
+                    <div class="down-content">
+                      <h4>{{ factory.titlehelp }}</h4>
+                      <p>{{ factory.describehelp }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        {% endfor %}
+{% endblock %}

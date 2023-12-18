@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <div class="logo">
+                    <div class="logoimg">
+                        <a href="main"><img src="static/images/logob.png" alt=""></a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Banner -->
+            {% for main in mains %}
+            <section class="main-banner">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="banner-content">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="banner-caption">
+                            <h4>{{ main.Wstep }}</h4>
+                              <br>
+                            <p>{{ main.Opis }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          {% endfor %}
+
+            <!-- Services -->
+
+
+          </div>
+        </div>
+
+{% endblock %}
