@@ -10,8 +10,7 @@ SECRET_KEY = '8ace3072-47a0-4910-b522-dc3601f38c35'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost','.pythonanywhere.com','installhome.pl']
-INTERNAL_IPS = ('0.0.0.0','127.0.0.1','localhost','.pythonanywhere.com','installhome.pl')
+ALLOWED_HOSTS = ['*','installhome.pythonanywhere.com','www.installhome.pl','.pythonanywhere.com','.pl','installhome.pl']
 
 INSTALLED_APPS = [
     'InstallHome',
