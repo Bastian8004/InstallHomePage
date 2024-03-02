@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <div class="logo">
+                    <div class="logoimg">
+                        <a href="main"><img src="static/images/logob.png" alt=""></a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Banner -->
+            <section class="main-banner">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="banner-content">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="banner-caption">
+                            <h4>Nasza oferta</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+              {% for oferta in ofertys %}
+                {% if oferta.lewo == True %}
+                    <section class="left-image">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="{{ oferta.zdjecie.url }}" class="responsive-img dpg-album-image" alt="{{ oferta.alt }}">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="right-content">
+                                        <h4>{{ oferta.nazwa }}</h4>
+                                        <p>{{ oferta.opis|linebreaksbr}}</p>
+                                        <div class="primary-button">
+                                        <a href="{% url 'ofert_detail' pk=oferta.pk %}">Cennik</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                {% elif oferta.prawo == True %}
+                    <!-- Right Image1 -->
+                    <section class="right-image">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="left-content">
+                                        <h4>{{ oferta.nazwa }}</h4>
+                                        <p>{{ oferta.opis }}</p>
+                                        <div class="primary-button">
+                                        <a href="{% url 'ofert_detail' pk=oferta.pk %}">Cennik</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{ oferta.zdjecie.url }}" class="responsive-img dpg-album-image" alt="{{ oferta.alt }}">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                {% endif %}
+            {% endfor %}
+
+            <!-- Services -->
+
+
+          </div>
+        </div>
+
+{% endblock %}
