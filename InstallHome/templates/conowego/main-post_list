@@ -1,6 +1,6 @@
               {% for post in posts %}
 
-            <!-- Header -->
+
               <section class="main-banner">
                   <div class="container-fluid">
                       <div class="row">
