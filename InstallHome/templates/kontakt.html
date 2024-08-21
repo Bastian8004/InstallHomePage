@@ -10,16 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <title>Install Home</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="static/material/css/bootstrap.min.css" rel="stylesheet">
-
-<!--
-Ramayana CSS Template
-https://templatemo.com/tm-529-ramayana
--->
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="static/material/css/fontawesome.css">
     <link rel="stylesheet" href="static/material/css/templatemo-style.css">
     <link rel="stylesheet" href="static/material/css/owl.css">
@@ -31,14 +22,13 @@ https://templatemo.com/tm-529-ramayana
   </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
     <div id="wrapper">
 
 {% block content %}
          <div id="main">
           <div class="inner">
 
-            <!-- Header -->
+           
             <header id="header">
                 <div class="logo">
                     <div class="logoimg">
@@ -48,7 +38,6 @@ https://templatemo.com/tm-529-ramayana
             </header>
 
             {% for contakt in contacts %}
-            <!-- Contact Form -->
             <section class="contact-form">
               <div class="container-fluid">
                 <div class="row">
@@ -81,13 +70,6 @@ https://templatemo.com/tm-529-ramayana
                     {% endfor %}
                   <div class="col-md-6">
                     <div id="map">
-                    <!-- How to change your own map point
-                           1. Go to Google Maps
-                           2. Click on your location point
-                           3. Click "Share" and choose "Embed map" tab
-                           4. Copy only URL and paste it within the src="" field below
-                    -->
-
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                   </div>
@@ -110,14 +92,10 @@ https://templatemo.com/tm-529-ramayana
 </div>
 {% endblock %}
 
-      <!-- Sidebar -->
         <div id="sidebar">
 
           <div class="inner">
-
-            <!-- Search Box -->
-
-            <!-- Menu -->
+            
             <nav id="menu">
               <ul>
                 <li><a href="firma">Install Home</a></li>
@@ -131,7 +109,6 @@ https://templatemo.com/tm-529-ramayana
 
               <br>
 
-            <!-- Featured Posts -->
             <div class="featured-posts">
               <div class="owl-carousel owl-theme">
                   <div class="featured-item">
@@ -140,7 +117,6 @@ https://templatemo.com/tm-529-ramayana
               </div>
             </div>
 
-            <!-- Footer -->
             <footer id="footer">
               <p class="copyright">Copyright &copy; 2023 Install Home
               <br>Design: <a rel="nofollow" href="https://www.facebook.com/profile.php?id=100083177449778"> Bastian</a></p>
@@ -151,22 +127,13 @@ https://templatemo.com/tm-529-ramayana
 
     </div>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
 
-<!--
-Ramayana CSS Template
-https://templatemo.com/tm-529-ramayana
--->
-
-    <!-- Additional CSS Files -->
         <link href="{% static 'material/css/bootstrap.min.css' %}" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'material/css/fontawesome.css' %}">
         <link rel="stylesheet" href="{% static 'material/css/templatemo-style.css' %}">
         <link rel="stylesheet" href="{% static 'material/css/owl.css' %}">
         <link rel="stylesheet" href="{% static 'external/photoswipe/photoswipe.css' %}">
         <link rel="stylesheet" href="{% static 'external/photoswipe/default-skin/default-skin.css' %}">
-
         <script src="{% static 'material/js/jquery.min.js' %}"></script>
         <script src="{% static 'material/js/bootstrap.bundle.min.js' %}"></script>
         <script src="{% static 'material/js/browser.min.js' %}"></script>
