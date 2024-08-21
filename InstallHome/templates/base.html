@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <title>Install Home</title>
-
-    <!-- Bootstrap core CSS -->
  <link href="{% static 'material/css/bootstrap.min.css' %}" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'material/css/fontawesome.css' %}">
         <link rel="stylesheet" href="{% static 'material/css/templatemo-style.css' %}">
@@ -32,21 +30,17 @@
   </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
     <div id="wrapper">
 
   {% block content %}
 
   {% endblock %}
 
-      <!-- Sidebar -->
+
         <div id="sidebar">
 
           <div class="inner">
 
-            <!-- Search Box -->
-
-            <!-- Menu -->
             <nav id="menu">
               <ul>
 
@@ -60,7 +54,7 @@
             </nav>
 
               <br>
-            <!-- Featured Posts -->
+
               <div class="featured-posts">
               <div class="owl-carousel owl-theme">
                   <div class="featured-item">
@@ -70,7 +64,7 @@
               </div>
             </div>
 
-            <!-- Footer -->
+
             <footer id="footer">
               <p class="copyright">Copyright &copy; 2023 Install Home
               <br>Design: <a rel="nofollow" href="https://www.facebook.com/profile.php?id=100083177449778"> Bastian</a></p>
@@ -81,8 +75,6 @@
 
     </div>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
     <script src="static/material/js/jquery.min.js"></script>
     <script src="static/material/js/bootstrap.bundle.min.js"></script>
     <script src="static/material/js/browser.min.js"></script>
@@ -91,7 +83,6 @@
     <script src="static/material/js/owl-carousel.js"></script>
     <script src="static/material/js/custom.js"></script>
    <script src="static/material/js/jquery-2.2.0.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script> -->
     {% include 'material/includes/material_js.html' %}
     <script src="{% static 'app.js' %}"></script> {% block js %}{% endblock %}
     </body>
