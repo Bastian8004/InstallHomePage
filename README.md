@@ -25,13 +25,13 @@
 <img src="images/2.png">
 <h4>Widok szczegółowy cennika danej kategorii</h4>
 <img src="images/3.png">
-<h4>Widok z blogiem</h4>
+<h4>Strona z blogiem</h4>
 <img src="images/4.png">
-<h4>Strona ze szczegółami danego posta</h4>
+<h4>Widok ze szczegółami danego posta</h4>
 <img src="images/5.png">
-<h4>Widok z galerią zdjęć z posta</h4>
+<h4>Strona z galerią zdjęć z posta</h4>
 <img src="images/6.png">
-<h4>Strona z informacjami firmy</h4>
+<h4>Widok z informacjami firmy</h4>
 <img src="images/7.png">
 
 <h4>Planowana aktualizacja i przerobienie strony,  która będzie miała na celu dodanie widoków formularzy dla admina ułatwiających zarządzanie treścią na stronie</h4>
