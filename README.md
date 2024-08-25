@@ -34,4 +34,4 @@
 <h4>Strona z informacjami firmy</h4>
 <img src="images/7.png">
 
-<h4>Planowana aktualizacja i przerobienie strony oraz dodanie widoków formularzy dla admina dla ułatwienia zarządzania treściąna stronie</h4>
+<h4>Planowana aktualizacja i przerobienie strony,  która będzie miała na celu dodanie widoków formularzy dla admina ułatwiających zarządzanie treścią na stronie</h4>
